@@ -1,0 +1,26 @@
+@import '../../../styles/mixins.scss';
+
+.main {
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  @include CenterFlex();
+}
+
+.title {
+  width: 100%;
+  @include CenterFlex();
+  font-family: 'Whitney Bold';
+}
+
+.earth {
+  margin: 0;
+}
