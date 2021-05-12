@@ -19,8 +19,10 @@
   width: 100%;
   @include CenterFlex();
   font-family: 'Whitney Bold';
+  color: white;
+  font-size: 60px;
 }
 
 .earth {
-  margin: 0;
+  margin: 100px;
 }

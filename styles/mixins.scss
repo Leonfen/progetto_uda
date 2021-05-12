@@ -92,15 +92,6 @@
   border-radius: 35px;
   padding-left: 10px;
   padding-right: 10px;
-  @if $darktheme {
-    color: white;
-    background-color: black;
-  } 
-  @else {
-    color: black;
-    background-color: white;
-  }
-
   border: none;
   cursor: pointer;
   -webkit-transition-duration: 0.2s;

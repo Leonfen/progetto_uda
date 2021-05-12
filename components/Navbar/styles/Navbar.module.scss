@@ -1,0 +1,195 @@
+@import '../../../styles/mixins.scss';
+
+
+.navbarExternalContainer {
+  background-color: black;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  @include CenterFlex();
+}
+
+.navbarContainer {
+  font-family: 'Whitney Medium';
+  width: calc(100% - 20px);
+  height: 60px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  justify-content: flex-end;
+}
+
+.center {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  border-radius: 60px;
+}
+
+.textLink {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(to right, lightblue, lightblue 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+}
+
+.textLink:hover {
+  background-position: 0 100%;
+}
+
+.downloadButton {
+  @include Button2(100px, 35px, false);
+  font-size: 14px;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .center {
+    display: none;
+  }
+  .right {
+    width: 50%;
+    padding-right: 20px;
+    justify-content: flex-end;
+  }
+  .left {
+    padding-left: 20px;
+    justify-content: right;
+    width: 50%;
+  }
+  .menuButton {
+    display: inline;
+    background: none;
+    border: none;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .menuButton:focus {
+    outline: none;
+  }
+}
+
+
+// Menu
+
+.background {
+  @include MenuBackground();
+}
+
+.menu {
+  z-index: 200;
+  position: fixed;
+  width: calc(330px - 40px);
+  height: calc(100vh - 40px);
+  right: 0;
+  top: 0;
+  background-color: gray;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.m_left {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.m_right {
+  width: 25%;
+  @include CenterFlex;  
+}
+
+.x_container {
+  cursor: pointer;
+  z-index: 250.5;
+  fill: white;
+}
+
+.list {
+  font-family: 'Whitney Medium';
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  width: calc(100% - 20px);
+  height: 20px;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+  }
+  a:-webkit-any-link {
+    color: white;
+  }
+}
+
+.li:hover {
+  text-decoration: underline;
+}
+
+.selected {
+  // text-decoration: underline !important;
+  color: white;
+  .li{
+    div {
+      color: white;
+    }
+  }
+}
+.selected:-webkit-any-link {
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
