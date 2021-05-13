@@ -10,9 +10,7 @@ export default function Navbar() {
       {<div className={styles.navbarExternalContainer}>
         <div className={styles.navbarContainer}>
           <div className={styles.left} style={{ cursor: 'pointer' }}>
-            <Link href='/home'>
-              <LogoUda />
-            </Link>
+            <LogoUda />
           </div>
           <div className={styles.center}>
             <Link href='/storia'><p className={styles.textLink}>Storia</p></Link>
@@ -20,6 +18,7 @@ export default function Navbar() {
             <Link href='/arte'><p className={styles.textLink}>Arte</p></Link>
             <Link href='/italiano'><p className={styles.textLink}>Italiano</p></Link>
             <Link href='/religione'><p className={styles.textLink}>Religione</p></Link>
+            <Link href='/home'><p className={styles.textLink}>Home</p></Link>
           </div>
 
         </div>

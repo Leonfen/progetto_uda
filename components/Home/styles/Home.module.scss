@@ -8,10 +8,8 @@
 }
 
 .home {
-  overflow: hidden;
   height: 100vh;
   width: 100vw;
-  position: absolute;
   @include CenterFlex();
 }
 
@@ -28,8 +26,142 @@
   display: block;
   margin-right:auto;
   margin-left: auto;
+  opacity: 0.3;
+  width: 1000px;
 }
 
-.backImage :hover{
-  display: none;
+.wrapper{
+  background-color: black;
+}
+
+.textHome{
+  color: white;
+  font-size: 30px;
+  margin: 0%;
+  position: relative;
+  top: 100px;
+  opacity: 1;
+}
+
+
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module p{
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section.module p:last-child{
+    margin-bottom: 0;
+}
+
+section.module.content{
+    padding: 40px 0;
+}
+
+section.module.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 48px;
+    line-height: 600px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 0%;
+}
+section.module.parallax_1{
+    background-image: url("../../../public/images/gCanyon.jpg");
+}
+
+section.module.parallax_2{
+    background-image: url("../../../public/images/rMountains.jpg");
+}
+
+section.module.parallax_3{
+    background-image: url("../../../public/images/3.jpg");
+}
+
+section.module.parallax_4{
+  background-image: url("../../../public/images/4.jpg");
+}
+
+section.module.parallax_5{
+  background-image: url("../../../public/images/5.jpg");
+}
+
+@media all and (min-width: 600px) {
+    section.module h2 {
+        font-size: 42px;
+    }
+    section.module p {
+        font-size: 20px;
+    }
+    section.module.parallax h1 {
+        font-size: 96px;
+    }
+}
+@media all and (min-width: 960px) {
+    section.module.parallax h1 {
+        font-size: 160px;
+    }
+}
+
+.allContainer{
+  display: flex;
+}
+
+.container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nextPage {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  overflow: hidden;
+  background: linear-gradient(to right, blue, blue 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+  border-radius: 40px;
+}
+
+.nextPage:hover {
+  background-position: 0 100%;
 }
