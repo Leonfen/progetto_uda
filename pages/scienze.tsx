@@ -1,6 +1,10 @@
 import React from 'react';
-/* eslint-disable semi */
+import Scienze from '../components/Scienze/index';
 
 export default function scienze() {
-  return <h1>Scienze Coming soon</h1>
+  return (
+    <div>
+      <Scienze />
+    </div>
+  );
 }
