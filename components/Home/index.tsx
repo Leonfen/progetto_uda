@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 import React from 'react';
 import clsx from 'clsx';
+import Link from 'next/link';
 import styles from './styles/Home.module.scss';
 
 export default function Home() {
@@ -17,8 +18,7 @@ export default function Home() {
           <p>Un modo nuovo per scoprire come il mondo possa evolversi senza danneggiare l&apos;ambiente.</p>
         </div>
         <div className={styles.nextPage}>
-          <button className={styles.buttonNextPage}>asdasd</button>
-
+          <Link href="/scienze"><button className={styles.buttonNextPage}>asdasd</button></Link>
         </div>
       </div>
     </section>
@@ -36,8 +36,7 @@ export default function Home() {
           <p>Scoprire come i diritti possano creare un mondo migliore.</p>
         </div>
         <div className={styles.nextPage}>
-          <button className={styles.buttonNextPage}>asdasd</button>
-
+          <Link href="/storia"><button className={styles.buttonNextPage}>asdasd</button></Link>
         </div>
       </div>
     </section>
@@ -55,8 +54,7 @@ export default function Home() {
           <p>La pace porterà sempre alla soluzione più difficile, ma anche a quella più bella.</p>
         </div>
         <div className={styles.nextPage}>
-          <button className={styles.buttonNextPage}>asdasd</button>
-
+          <Link href="/religione"><button className={styles.buttonNextPage}>asdasd</button></Link>
         </div>
       </div>
     </section>
@@ -74,8 +72,7 @@ export default function Home() {
           <p>La bellezza può suscitare nell&apos;animo umano qualcosa di mai visto prima.</p>
         </div>
         <div className={styles.nextPage}>
-          <button className={styles.buttonNextPage}>asdasd</button>
-
+          <Link href="/arte"><button className={styles.buttonNextPage}>asdasd</button></Link>
         </div>
       </div>
     </section>
