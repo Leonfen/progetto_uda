@@ -1,3 +1,5 @@
+@import '../../../styles/mixins.scss';
+
 .title{
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
@@ -6,4 +8,37 @@
   text-transform: uppercase;
   margin: 0;
   background-color: black;
+}
+
+.gif{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gifContainer{
+  width: fit-content;
+}
+
+.gifsContainer{
+  background-color: black;
+  display: flex;
+  width: 98.9vw;
+} 
+
+.container1{
+  position: relative;
+  left: 3%;
+  margin-top: 65px;
+}
+
+.container2{
+  position: relative;
+  left: 5%;
+  margin-top: 200px;
+}
+
+.container3{
+  position: relative;
+  left: 4%;
 }
