@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles/Scienze.module.scss';
 import PageCard from './PageCard/index';
+import Contenuti from './Contenuti/index';
 
 export default function Scienze() {
   return (<>
@@ -17,6 +18,7 @@ export default function Scienze() {
         <PageCard description='ciao' title="L'INQUINAMENTO E' UNA COSA BRUTTA" src='https://media.giphy.com/media/icVQcSFS5m1RJU4Ux2/giphy.gif' alt='wella' type={true} />
       </div>
     </div>
+    <Contenuti />
   </>
   );
 }
