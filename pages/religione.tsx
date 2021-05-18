@@ -1,6 +1,7 @@
 import React from 'react';
+import Religione from '../components/Religione/index';
 /* eslint-disable semi */
 
 export default function religione() {
-  return <h1>Religione Coming soon</h1>
+  return <Religione />
 }

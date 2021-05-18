@@ -1,6 +1,7 @@
 /* eslint-disable semi */
 import React from 'react';
+import Arte from '../components/Arte/index';
 
 export default function arte() {
-  return <h1>Arte Coming soon</h1>
+  return <Arte />
 }
