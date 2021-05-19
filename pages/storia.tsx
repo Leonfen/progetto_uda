@@ -1,6 +1,7 @@
 import React from 'react';
+import Storia from '../components/Storia_Filosofia/index';
 /* eslint-disable semi */
 
 export default function storia() {
-  return <h1>Storia Coming soon</h1>
+  return <Storia />
 }

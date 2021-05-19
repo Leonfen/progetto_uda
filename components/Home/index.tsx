@@ -2,14 +2,20 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
+import { useSpring, animated } from 'react-spring';
 import styles from './styles/Home.module.scss';
 
 export default function Home() {
+  const transfrom = useSpring({
+    loop: { reverse: false },
+    from: { x: -1000 },
+    to: { x: 0 },
+  });
   return (<>
     <section className={clsx(styles.module, styles.parallax, styles.parallax_1)}>
-      <div className={styles.container}>
+      <animated.div className={styles.container} style={transfrom}>
         <h1>QUESTO</h1>
-      </div>
+      </animated.div>
     </section>
     <section className={clsx(styles.module, styles.content)}>
       <div className={styles.allContainer}>
@@ -24,9 +30,9 @@ export default function Home() {
     </section>
 
     <section className={clsx(styles.module, styles.parallax, styles.parallax_2)}>
-      <div className={styles.container}>
-        <h1>É</h1>
-      </div>
+      <animated.div className={styles.container} style={transfrom}>
+        <h1>E</h1>
+      </animated.div>
     </section>
 
     <section className={clsx(styles.module, styles.content)}>
@@ -42,9 +48,9 @@ export default function Home() {
     </section>
 
     <section className={clsx(styles.module, styles.parallax, styles.parallax_3)}>
-      <div className={styles.container}>
+      <animated.div className={styles.container} style={transfrom}>
         <h1>IL</h1>
-      </div>
+      </animated.div>
     </section>
 
     <section className={clsx(styles.module, styles.content)}>
@@ -60,9 +66,9 @@ export default function Home() {
     </section>
 
     <section className={clsx(styles.module, styles.parallax, styles.parallax_4)}>
-      <div className={styles.container}>
+      <animated.div className={styles.container} style={transfrom}>
         <h1>NOSTRO</h1>
-      </div>
+      </animated.div>
     </section>
 
     <section className={clsx(styles.module, styles.content)}>
@@ -78,9 +84,9 @@ export default function Home() {
     </section>
 
     <section className={clsx(styles.module, styles.parallax, styles.parallax_5)}>
-      <div className={styles.container}>
-        <h1>MONDO.</h1>
-      </div>
+      <animated.div className={styles.container} style={transfrom}>
+        <h1>MONDO</h1>
+      </animated.div>
     </section>
   </>
   );
