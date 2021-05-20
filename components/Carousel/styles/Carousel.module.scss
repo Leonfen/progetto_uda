@@ -1,0 +1,30 @@
+.allContainer{
+  display: flex;
+}
+
+.container{
+  margin-left: 100px;  
+}
+
+.nextPage {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 700px;  
+}
+
+.buttonNextPage{
+  background: linear-gradient(to right, blue, blue 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.buttonNextPage:hover {
+  background-position: 0 100%;
+}

@@ -3,6 +3,7 @@ import React from 'react';
 import clsx from 'clsx';
 import { useSpring, animated } from 'react-spring';
 import styles from './styles/Contenuti.module.scss';
+import Carousel from '../../Carousel/index';
 
 export default function Home() {
   const transfrom = useSpring({
@@ -16,14 +17,7 @@ export default function Home() {
         <h1>SALVIAMO IL NOSTRO PIANETA</h1>
       </animated.div>
     </section>
-    <section className={clsx(styles.module, styles.content)}>
-      <div className={styles.allContainer}>
-        <div className={styles.container}>
-          <h2>SCIENZE</h2>
-          <p>Un modo nuovo per scoprire come il mondo possa evolversi senza danneggiare l&apos;ambiente.</p>
-        </div>
-      </div>
-    </section>
+    <Carousel id={['scienze1', 'scienze2', 'scienze3']} title={['primo', 'secondo', 'terzo']} description={['prima descrizione', 'seconda descrizione', 'terza descrizione']} link={'scienze'} buttonDescription={'salve bella ragazza'} argument='ciao'/>
 
     <section className={clsx(styles.module, styles.parallax, styles.parallax_2)}>
       <animated.div className={styles.container} style={transfrom}>
@@ -31,14 +25,7 @@ export default function Home() {
       </animated.div>
     </section>
 
-    <section className={clsx(styles.module, styles.content)}>
-      <div className={styles.allContainer}>
-        <div className={styles.container}>
-          <h2>STORIA</h2>
-          <p>Scoprire come i diritti possano creare un mondo migliore.</p>
-        </div>
-      </div>
-    </section>
+    <Carousel id={['scienze1', 'scienze2', 'scienze3']} title={['primo', 'secondo', 'terzo']} description={['prima descrizione', 'seconda descrizione', 'terza descrizione']} link={'scienze'} buttonDescription={'salve bella ragazza'} argument='ciao'/>
 
     <section className={clsx(styles.module, styles.parallax, styles.parallax_3)}>
       <animated.div className={styles.container} style={transfrom}>
@@ -46,14 +33,8 @@ export default function Home() {
       </animated.div>
     </section>
 
-    <section className={clsx(styles.module, styles.content)}>
-      <div className={styles.allContainer}>
-        <div className={styles.container}>
-          <h2>RELIGIONE</h2>
-          <p>La pace porterà sempre alla soluzione più difficile, ma anche a quella più bella.</p>
-        </div>
-      </div>
-    </section>
+    <Carousel id={['scienze1', 'scienze2', 'scienze3']} title={['primo', 'secondo', 'terzo']} description={['prima descrizione', 'seconda descrizione', 'terza descrizione']} link={'scienze'} buttonDescription={'salve bella ragazza'} argument='ciao'/>
+
   </>
   );
 }
