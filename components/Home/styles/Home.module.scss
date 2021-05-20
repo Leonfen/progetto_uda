@@ -72,7 +72,8 @@ section.module p:last-child{
 
 section.module.content{
     padding: 40px 0;
-}
+    width: 100%;
+  }
 
 section.module.parallax {
     height: 600px;
@@ -129,38 +130,4 @@ section.module.parallax_5{
     }
 }
 
-.allContainer{
-  display: flex;
-}
 
-.container{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.nextPage {
-  display: flex;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  padding-right: 10px;
-}
-
-.buttonNextPage{
-  background: linear-gradient(to right, blue, blue 50%, black 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 275ms ease;
-  border-radius: 10px;
-  font-size: large;
-}
-
-.buttonNextPage:hover {
-  background-position: 0 100%;
-}
