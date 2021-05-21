@@ -1,0 +1,30 @@
+.sfondo{
+  background-color: black;
+}
+
+.title{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  background-color: black;
+}
+
+.background{
+  height: 110vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.info1{
+  position: absolute;
+  left: 10%;
+}
+
+.risposta1{
+  position: absolute;
+  right: 10%;
+}
+
