@@ -41,13 +41,13 @@ export default function Storia() {
     </Spring>
     <div className={styles.gifsContainer}>
       <animated.div className={clsx(styles.gifContainer, styles.container1)} style={transfrom1}>
-        <PageCard description='wella sdads' title='SALVIAMO IL NOSTRO PIANETA' src='https://media.giphy.com/media/fAhQtuLYJwByWeutjy/giphy.gif' alt='wella' type={true} />
+        <PageCard description='La donna lavoratice ha gli stessi diritti e, a paritò di lavoro, le stesse retribuzioni che spettano al lavoratore' title='Articolo 37' src='https://media.giphy.com/media/3o85xmZgJWBFA9TRkY/giphy.gif' alt='wella' type={true} />
       </animated.div>
       <animated.div className={clsx(styles.gifContainer, styles.container2)} style={transfrom2}>
-        <PageCard description='wella sdads' title='SALVIAMO IL NOSTRO PIANETA' src='https://media.giphy.com/media/fAhQtuLYJwByWeutjy/giphy.gif' alt='wella' type={true} />
+        <PageCard description='La Repubblica riconosce i diritti della famiglia come societò naturale fondata sul matrimonio.' title='Articolo 29' src='https://media.giphy.com/media/3ohc0R4wyF8dgsVEFW/giphy.gif' alt='wella' type={true} />
       </animated.div>
       <animated.div className={clsx(styles.gifContainer, styles.container3)} style={transfrom3}>
-        <PageCard description='Lorem' title="L'INQUINAMENTO E' UNA COSA BRUTTA" src='https://media.giphy.com/media/icVQcSFS5m1RJU4Ux2/giphy.gif' alt='wella' type={false} />
+        <PageCard description='I diritti e doveri dei cittadini. Il lavoro come opportunità' title="Storia" src='https://www.civico93.it/wp-content/uploads/2019/12/costituzione-gazzetta.jpg' alt='wella' type={false} />
       </animated.div>
     </div>
     <Contenuti />
