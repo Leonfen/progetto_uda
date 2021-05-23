@@ -5,6 +5,7 @@ import PageForest from './PageForest/index';
 import styles from './styles/Arte.module.scss';
 import PageCard from './PageCard/index';
 import Contenuti from './Contenuti/index';
+import PageLogo from './PageLogo/index';
 
 export default function Arte() {
   const transfrom1 = useSpring({
@@ -28,13 +29,13 @@ export default function Arte() {
     <h1 className={styles.title}>L&apos;ARTE NELLA NOSTRA SOCIETA&apos;</h1>
     <div className={styles.gifsContainer}>
       <animated.div className={clsx(styles.gifContainer, styles.container1)} style={transfrom1}>
-        <PageCard description='wella sdads' title='SALVIAMO IL NOSTRO PIANETA' src='https://media.giphy.com/media/fAhQtuLYJwByWeutjy/giphy.gif' alt='wella' type={true} />
+        <PageCard description='Il manifesto della comunicazione non ostile' title='ARTE' src='https://paroleostili.it/wp-content/uploads/2018/01/manifesto_1200x628.png' alt='wella' type={true} />
       </animated.div>
       <animated.div className={clsx(styles.gifContainer, styles.container2)} style={transfrom2}>
-        <PageForest description="Lorem" title="sadasd" />
+        <PageForest description="Le parole sono lo strumento più potente che abbiamo" title="Prima di parlare si prega di anzionare il cervello" />
       </animated.div>
       <animated.div className={clsx(styles.gifContainer, styles.container3)} style={transfrom3}>
-        <PageCard description='Lorem' title="L'INQUINAMENTO E' UNA COSA BRUTTA" src='https://media.giphy.com/media/icVQcSFS5m1RJU4Ux2/giphy.gif' alt='wella' type={true} />
+        <PageLogo description='Mi prendo tutto il tempo necessario a esprimere al meglio quel che penso' title="Le parole danno forma al pensiero" type={true} />
       </animated.div>
     </div>
     <Contenuti />

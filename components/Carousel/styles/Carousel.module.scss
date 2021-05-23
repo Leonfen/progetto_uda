@@ -38,9 +38,9 @@
 .text{
   flex-direction: row;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
   margin-left: 200px;
+  width: 100%;
+  margin-top: -50px;
 }
 
 .text h2{
@@ -49,6 +49,7 @@
 
 .text p{
   color: white;
+  width: 50%;
 }
 
 .image{

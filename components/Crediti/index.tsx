@@ -226,7 +226,6 @@ export default function crediti() {
         <animated.div className={clsx(styles.photo, styles.photo10)} style={photo10} />
         <animated.div className={clsx(styles.photo, styles.photo11)} style={photo11} />
         <animated.div className={clsx(styles.photo, styles.photo12)} style={photo12} />
-
       </div>
     </div>);
 }

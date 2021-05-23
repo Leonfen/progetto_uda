@@ -21,8 +21,16 @@
 // demo styles
 
 .container {
-	width: 1000px;
+	width: 640px;
 	display: inline-flex;
+}
+
+.container_wide {
+	width: 400px;
+}
+
+.container_narrow {
+	width: 380px;
 }
 
 .card {
@@ -42,13 +50,31 @@
 }
 
 .card__content {
-	padding: 2em 1.5em;
-}
-
-.card__content h2{
-  max-width: 400px;
+	padding: 2em 1.5em;  
 }
 
 .photo {
-	max-width: 400px;
+  width: 100%;
+  height: 100%;
+  background-image:url('../../../../public/images/arte/manifesto_nostro.jpeg');
+  background-size: cover;
+}
+
+.text1{
+  font-size: 15px;
+  color: black;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  width: 120px;
+}
+
+.text2{
+  font-size: 15px;
+  color: black;
+  position: absolute;
+  top: 160px;
+  left: 190px;
+  width: 120px;
+  text-align: center;
 }

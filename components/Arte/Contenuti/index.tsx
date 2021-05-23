@@ -11,25 +11,22 @@ export default function Home() {
     from: { x: -1000 },
     to: { x: 0 },
   });
+
+  // FIRSTSLIDE
+  const arte1Title: string = 'ARTE';
+  const arte2Title: string = 'Le parole danno forma al pensiero.';
+  const arte3Title: string = 'Prima di parlare si prega di azionare il cervello';
+  const arte1Description: string = 'Tra tutti i 10 punti raccolti nel Manifesto della comunicazione non ostile, abbiamo scelto il punto 3.  Spesso e volentieri ci ritrovimo a discutere, parlare e confrontarci con altre persone anche per ore, senza renderci conto che in quel preciso istante stiamo dando forma al nostro pensiero.';
+  const arte2Description: string = 'Tuttavia è importante saper scegliere le parole giuste e quelle più adeguate a descrivere ciò che pensiamo, senza creare fraintendimenti. Per fare ciò, e ottenere il miglior risultato possibile, è necessario prendersi del tempo per riflettere sulle parole e i concetti da esporre.';
+  const arte3Description: string = 'Nonostante le parole a volte possono sembrarci superflue, se scelte correttamente e nel momento giusto, sono lo strumento più potente che abbiamo per dare maggiore valore alle nostre idee. Non a caso un vecchio detto popolare cita :"Prima di parlare si prega di azionare il cervello".';
+
   return (<>
     <section className={clsx(styles.module, styles.parallax, styles.parallax_1)}>
       <animated.div className={styles.container} style={transfrom}>
-        <h1>SALVIAMO IL NOSTRO PIANETA</h1>
+        <h1>DIAMO IL GIUSTO PESO ALLE PAROLE</h1>
       </animated.div>
     </section>
-    <Carousel id={['Argomento_Arte_A_1', 'Argomento_Arte_A_2', 'Argomento_Arte_A_3']} title={['Primo argomento arte, prima slide', 'Primo argomento arte, seconda slide', 'Primo argomento arte, terza slide']} description={['Questa è la prima slide del primo argomento', 'Questa è la seconda slide del primo argomento', 'Questa è la terza slide del primo argomento']} link={false} buttonDescription='' argument='arte'/>
-    <section className={clsx(styles.module, styles.parallax, styles.parallax_2)}>
-      <animated.div className={styles.container} style={transfrom}>
-        <h1>RICICLIAMO INSIEME LA PLASTICA</h1>
-      </animated.div>
-    </section>
-    <Carousel id={['Argomento_Arte_B_1', 'Argomento_Arte_B_2', 'Argomento_Arte_B_3']} title={['Secondo argomento arte, prima slide', 'Secondo argomento arte, seconda slide', 'Secondo argomento arte, terza slide']} description={['Questa è la prima slide del secondo argomento', 'Questa è la seconda slide del secondo argomento', 'Questa è la terza slide del secondo argomento']} link={false} buttonDescription='' argument='arte'/>
-    <section className={clsx(styles.module, styles.parallax, styles.parallax_3)}>
-      <animated.div className={styles.container} style={transfrom}>
-        <h1>L&apos;INQUINAMENTO E&apos; UNA COSA BRUTTA</h1>
-      </animated.div>
-    </section>
-    <Carousel id={['Argomento_Arte_C_1', 'Argomento_Arte_C_2', 'Argomento_Arte_B_3']} title={['Terzo argomento arte, prima slide', 'Terzo argomento arte, seconda slide', 'Terzo argomento arte, terza slide']} description={['Questa è la prima slide del terzo argomento', 'Questa è la seconda slide del terzo argomento', 'Questa è la terza slide del terzo argomento']} link={false} buttonDescription='' argument='arte'/>
+    <Carousel id={['Argomento_Arte_A_1', 'Argomento_Arte_A_2', 'Argomento_Arte_A_3']} title={[arte1Title, arte2Title, arte3Title]} description={[arte1Description, arte2Description, arte3Description]} link={false} buttonDescription='' argument='arte'/>
   </>
   );
 }

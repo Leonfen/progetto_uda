@@ -86,11 +86,6 @@ export default function Carousel({
                 <h2>{title[0]}</h2>
                 <p>{description[0]}</p>
               </div>
-              <div className={styles.imageButton}>
-                {link && <div className={styles.nextPage}>
-                  <Link href={`/${link}`} ><button className={styles.buttonNextPage}>{buttonDescription}</button></Link>
-                </div>}
-              </div>
             </div>
           </div>
         </section>,
@@ -131,6 +126,11 @@ export default function Carousel({
                 <h2>{title[2]}</h2>
                 <p>{description[2]}</p>
               </div>
+              {link && <div className={styles.imageButton}>
+                <div className={styles.nextPage}>
+                  <Link href={`/${link}`} ><button className={styles.buttonNextPage}>{buttonDescription}</button></Link>
+                </div>
+              </div>}
             </div>
           </div>
         </section>,
