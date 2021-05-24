@@ -128,7 +128,7 @@ export default function Carousel({
               </div>
               {link && <div className={styles.imageButton}>
                 <div className={styles.nextPage}>
-                  <Link href={`/${link}`} ><button className={styles.buttonNextPage}>{buttonDescription}</button></Link>
+                  <Link href={`/${link}`} ><button className={clsx(styles.btn)}>{buttonDescription}</button></Link>
                 </div>
               </div>}
             </div>

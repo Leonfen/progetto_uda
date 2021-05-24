@@ -50,6 +50,7 @@
 .text p{
   color: white;
   width: 50%;
+  min-width: 200px;
 }
 
 .image{
@@ -178,4 +179,78 @@
   left: 500px;
   top: 10px;
   background-size: cover;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:		url('https://tympanus.net/Development/CreativeButtons/fonts/icomoon/icomoon.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:		url('https://tympanus.net/Development/CreativeButtons/fonts/icomoon/icomoon.woff') format('woff');
+}
+
+.btn {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    top: -30px;  
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  
+    border-radius: 50px;
+    border: 3px solid #fff;
+    color: black;
+    overflow: hidden;
+}
+
+.btn:active {
+    border-color: #17954c;
+    color: #17954c;
+}
+
+.btn:hover {
+	    background: #24b662;
+}
+
+.btn:active:before {
+	    color: #17954c;
+}
+
+
+/* Pseudo elements for icon */
+.btn:before {
+    font-family: 'icomoon';
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    height: 100%;
+    font-size: 125%;
+    line-height: 3.5;
+    color: #fff;
+  
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  
+    left: 70%;
+    opacity: 0;
+    top: 20px;
+    content: "➡️";
+}
+
+.btn:hover:before {
+    left: 80%;
+    opacity: 1;
 }
