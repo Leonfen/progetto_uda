@@ -8,38 +8,38 @@ export default function crediti() {
   const transformation2 = useSpring({
     config: { mass: 2, tension: 8, friction: 18 },
     loop: false,
-    from: { opacity: 0, y: 850 },
-    to: { opacity: 1, y: -900 },
+    from: { opacity: 0, y: 1200 },
+    to: { opacity: 1, y: 50 },
   });
 
   const transformation3 = useSpring({
     config: { mass: 2, tension: 8, friction: 18 },
     loop: false,
-    from: { opacity: 0, y: 950 },
-    to: { opacity: 1, y: -800 },
+    from: { opacity: 0, y: 1300 },
+    to: { opacity: 1, y: 150 },
 
   });
 
   const transformation4 = useSpring({
     config: { mass: 2, tension: 8, friction: 18 },
     loop: false,
-    from: { opacity: 0, y: 1050 },
-    to: { opacity: 1, y: -700 },
+    from: { opacity: 0, y: 1400 },
+    to: { opacity: 1, y: 250 },
   });
 
   const transformation5 = useSpring({
     config: { mass: 2, tension: 8, friction: 18 },
     loop: false,
-    from: { opacity: 0, y: 1150 },
-    to: { opacity: 1, y: -600 },
+    from: { opacity: 0, y: 1500 },
+    to: { opacity: 1, y: 350 },
   });
 
   const transformation6 = useSpring({
 
     config: { mass: 2, tension: 8, friction: 18 },
     loop: false,
-    from: { opacity: 0, y: 1250 },
-    to: { opacity: 1, y: -500 },
+    from: { opacity: 0, y: 1600 },
+    to: { opacity: 1, y: 450 },
 
   });
 
@@ -47,15 +47,15 @@ export default function crediti() {
 
     config: { mass: 2, tension: 8, friction: 18 },
     loop: false,
-    from: { opacity: 0, y: 1350 },
-    to: { opacity: 1, y: -400 },
+    from: { opacity: 0, y: 1700 },
+    to: { opacity: 1, y: 550 },
   });
 
   const transformation8 = useSpring({
     config: { mass: 2, tension: 8, friction: 18 },
     loop: false,
-    from: { opacity: 0, y: 1450 },
-    to: { opacity: 1, y: -300 },
+    from: { opacity: 0, y: 1800 },
+    to: { opacity: 1, y: 650 },
   });
   // photos animation
   const photo1 = useSpring({
@@ -156,7 +156,7 @@ export default function crediti() {
 
   return (
     <div className={styles.sfondo}>
-      <h1 className={styles.title}>GRAZIE PER AVER SEGUITO LA PRESENTAZIONE</h1>
+      <h1 className={styles.title1}>GRAZIE PER AVER SEGUITO LA PRESENTAZIONE</h1>
       <div className={styles.background}>
         <animated.div style={transformation2}>
           <h1 className={clsx(styles.title, styles.info1)}>
@@ -168,50 +168,50 @@ export default function crediti() {
         </animated.div>
         <animated.div style={transformation3}>
           <h1 className={clsx(styles.title, styles.info1)}>
-            PRODUTTORE ESECUTIVO:
+            CREATRICI CONTENUTI:
           </h1>
           <h1 className={clsx(styles.title, styles.risposta1)}>
-            DE ROSE MICHELE
+            FRANCESCA SENESE - DESIRÉE PANZARELLA
           </h1>
         </animated.div>
         <animated.div style={transformation4}>
           <h1 className={clsx(styles.title, styles.info1)}>
-            PRODUTTORE ESECUTIVO:
+            RICERCATORI DI IMMAGINI:
           </h1>
           <h1 className={clsx(styles.title, styles.risposta1)}>
-            DE ROSE MICHELE
+            FRANCESCA SENESE - MICHELE DE ROSE - DESIRÉE PANZARELLA
           </h1>
         </animated.div>
         <animated.div style={transformation5}>
           <h1 className={clsx(styles.title, styles.info1)}>
-            PRODUTTORE ESECUTIVO:
+            CREATRICE LOGO:
           </h1>
           <h1 className={clsx(styles.title, styles.risposta1)}>
-            DE ROSE MICHELE
+            DESIRÉE PANZARELLA
           </h1>
         </animated.div>
         <animated.div style={transformation6}>
           <h1 className={clsx(styles.title, styles.info1)}>
-            PRODUTTORE ESECUTIVO:
+            IDEE PROGETTAZIONE:
           </h1>
           <h1 className={clsx(styles.title, styles.risposta1)}>
-            DE ROSE MICHELE
+            FRANCESCA SENESE - DESIRÉE PANZARELLA - DE ROSE MICHELE
           </h1>
         </animated.div>
         <animated.div style={transformation7}>
           <h1 className={clsx(styles.title, styles.info1)}>
-            PRODUTTORE ESECUTIVO:
+            VOCI FUORI CAMPO:
           </h1>
           <h1 className={clsx(styles.title, styles.risposta1)}>
-            DE ROSE MICHELE
+            DE ROSE MICHELE - FRANCESCA SENESE - DESIRÉE PANZARELLA
           </h1>
         </animated.div>
         <animated.div style={transformation8}>
           <h1 className={clsx(styles.title, styles.info1)}>
-            PRODUTTORE ESECUTIVO:
+            PARTECIPANTI:
           </h1>
           <h1 className={clsx(styles.title, styles.risposta1)}>
-            DE ROSE MICHELE
+            DE ROSE MICHELE - FRANCESCA SENESE - DESIRÉE PANZARELLA
           </h1>
         </animated.div>
         <animated.div className={clsx(styles.photo, styles.photo1)} style={photo1} />

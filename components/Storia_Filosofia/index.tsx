@@ -26,10 +26,14 @@ export default function Storia() {
   return <>
     <Spring
       loop
-      from={{ opacity: 0, color: 'red' }}
+      from={{ opacity: 1, color: 'red' }}
       to={[
         { opacity: 1, color: '#ffaaee' },
-        { opacity: 0, color: 'rgb(14,26,19)' },
+        { opacity: 1, color: 'yellow' },
+        { opacity: 1, color: 'lightblue' },
+        { opacity: 1, color: 'purple' },
+        { opacity: 1, color: 'green' },
+        { opacity: 1, color: 'red' },
       ]}>
       {(transformation) => (
         <div className={styles.title}>
@@ -44,10 +48,10 @@ export default function Storia() {
         <PageCard description='La donna lavoratice ha gli stessi diritti e, a paritò di lavoro, le stesse retribuzioni che spettano al lavoratore' title='Articolo 37' src='https://media.giphy.com/media/3o85xmZgJWBFA9TRkY/giphy.gif' alt='wella' type={true} />
       </animated.div>
       <animated.div className={clsx(styles.gifContainer, styles.container2)} style={transfrom2}>
-        <PageCard description='La Repubblica riconosce i diritti della famiglia come societò naturale fondata sul matrimonio.' title='Articolo 29' src='https://media.giphy.com/media/3ohc0R4wyF8dgsVEFW/giphy.gif' alt='wella' type={true} />
+        <PageCard description='I diritti e doveri dei cittadini. Il lavoro come opportunità' title="Storia" src='https://www.civico93.it/wp-content/uploads/2019/12/costituzione-gazzetta.jpg' alt='wella' type={false} />
       </animated.div>
       <animated.div className={clsx(styles.gifContainer, styles.container3)} style={transfrom3}>
-        <PageCard description='I diritti e doveri dei cittadini. Il lavoro come opportunità' title="Storia" src='https://www.civico93.it/wp-content/uploads/2019/12/costituzione-gazzetta.jpg' alt='wella' type={false} />
+        <PageCard description='La Repubblica riconosce i diritti della famiglia come societò naturale fondata sul matrimonio.' title='Articolo 29' src='https://media.giphy.com/media/3ohc0R4wyF8dgsVEFW/giphy.gif' alt='wella' type={true} />
       </animated.div>
     </div>
     <Contenuti />

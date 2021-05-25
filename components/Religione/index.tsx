@@ -26,10 +26,14 @@ export default function Religione() {
   return <>
     <Spring
       loop
-      from={{ opacity: 0, color: 'red' }}
+      from={{ opacity: 1, color: 'red' }}
       to={[
         { opacity: 1, color: '#ffaaee' },
-        { opacity: 0, color: 'rgb(14,26,19)' },
+        { opacity: 1, color: 'yellow' },
+        { opacity: 1, color: 'lightblue' },
+        { opacity: 1, color: 'purple' },
+        { opacity: 1, color: 'green' },
+        { opacity: 1, color: 'red' },
       ]}>
       {(transformation) => (
         <div className={styles.title}>
