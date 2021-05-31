@@ -38,7 +38,7 @@ export default function Storia() {
       {(transformation) => (
         <div className={styles.title}>
           <animated.div style={transformation}>
-            <h1>LA SUPER STORIA</h1>
+            <h1>I DIRITTI E I DOVERI DEI CITTADINI</h1>
           </animated.div>
         </div>
       )}

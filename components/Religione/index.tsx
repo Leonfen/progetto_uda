@@ -38,20 +38,20 @@ export default function Religione() {
       {(transformation) => (
         <div className={styles.title}>
           <animated.div style={transformation}>
-            <h1>L&apos;ARTE NELLA NOSTRA SOCIETA&apos;</h1>
+            <h1>LA PACE</h1>
           </animated.div>
         </div>
       )}
     </Spring>
     <div className={styles.gifsContainer}>
       <animated.div className={clsx(styles.gifContainer, styles.container1)} style={transfrom1}>
-        <PageCard description='wella sdads' title='SALVIAMO IL NOSTRO PIANETA' src='https://media.giphy.com/media/fAhQtuLYJwByWeutjy/giphy.gif' alt='wella' type={true} />
+        <PageCard description='La pace è senz’altro uno degli obiettivi che accomuna le persone di ogni parte del mondo sin dai tempi più antichi' title="Che cos'è la pace?" src='https://media.giphy.com/media/YnNnmWg7WBKqkVolkX/giphy.gif' alt='wella' type={true} />
       </animated.div>
       <animated.div className={clsx(styles.gifContainer, styles.container2)} style={transfrom2}>
-        <PageCard description='wella sdads' title='SALVIAMO IL NOSTRO PIANETA' src='https://media.giphy.com/media/fAhQtuLYJwByWeutjy/giphy.gif' alt='wella' type={true} />
+        <PageCard description='Affinché la pace possa esistere nel mondo è necessario un impegno di tutti.' title='Come possiamo mantenere la pace?' src='https://media.giphy.com/media/YR2gvdcNw2fgzgTN7W/giphy.gif' alt='wella' type={true} />
       </animated.div>
       <animated.div className={clsx(styles.gifContainer, styles.container3)} style={transfrom3}>
-        <PageCard description='Lorem' title="L'INQUINAMENTO E' UNA COSA BRUTTA" src='https://media.giphy.com/media/icVQcSFS5m1RJU4Ux2/giphy.gif' alt='wella' type={false} />
+        <PageCard description='Per favorire questa condizione di pace c’è bisogno di un rispetto reciproco...' title="Come favorire la pace." src='https://media.giphy.com/media/xUOwFR5nCmlHCpuouY/giphy.gif' alt='wella' type={false} />
       </animated.div>
     </div>
     <Contenuti />

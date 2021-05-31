@@ -15,7 +15,7 @@ export default function Home() {
   const storia1Title: string = 'STORIA';
   const storia2Title: string = 'Art. 29';
   const storia3Title: string = 'Art. 37';
-  const storia1Description: string = 'I diritti e doveri dei cittadini. Il lavoro come opportunità';
+  const storia1Description: string = 'I diritti e doveri dei cittadini. Il lavoro come opportunità. Questo è il titolo sul quale noi abbiamo dovuto lavorare nel campo della storia e della filosofia. Abbiamo quindi scelto due punti quali abbiamo trovato interessanti.';
   const storia2Description: string = 'La Repubblica riconosce i diritti della famiglia come società naturale fondata sul matrimonio.';
   const storia3Description: string = 'La donna lavoratrice ha gli stessi diritti e, a parità di lavoro, le stesse retribuzioni che spettano al lavoratore.';
 
